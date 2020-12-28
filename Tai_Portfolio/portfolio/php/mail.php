@@ -1,6 +1,6 @@
 <?php
 
-$mailto = "where_to_send_email@example.com";
+$mailto = "taichen.rose0@gmail.com";
 if( isset($_POST['mailto']) ){
 	$mailto = $_POST['mailto'];
 }
