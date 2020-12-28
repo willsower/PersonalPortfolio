@@ -1,3 +1,7 @@
 .centerAll {
     text-align: center;
 }
+
+.color-github:hover {
+    color: #6a737d;
+}
