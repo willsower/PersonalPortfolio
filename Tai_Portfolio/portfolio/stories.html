@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Taichen - Portfolio</title>
+	<title>Gambit - Portfolio / Photography HTML Template</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="img/favicon.png">
@@ -15,7 +15,7 @@
 	<div id="preloader"></div>
 
 	<!-- Header -->
-	<header id="header" class="header-transparent">
+	<header id="header">
 
 		<!-- Logo -->
 		<a href="/" class="logo">
@@ -85,11 +85,23 @@
 			<!-- About -->
 			<section id="about">
 				
-				<h1 class="capitalize mb-5">About Me<br></h1>
+				<h1 class="capitalize mb-5">We are creative digital<br> design agency</h1>
+				
+				<!-- Slider -->
+				<div class="swiper" data-autoplay="3000" data-effect="fade" data-loop="true" data-nav="true" data-pagination="true">
+					<div class="swiper-slide">
+						<img src="img/gallery/20.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="img/gallery/21.jpg" alt="">
+					</div>
+				</div>
+				<!-- /Slider -->
 
 				<div class="row pt-5">
 					<div class="col-md">
-						<img src="img/portfolioPic.png" alt="">
+						<p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam fugiat culpa quibusdam voluptates eum repellendus
+							nostrum laborum, ullam iure sunt voluptatem minima aut similique quia tenetur vel exercitationem est facere.</p>
 					</div>
 					<div class="col-md">
 						<p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam fugiat culpa quibusdam voluptates eum repellendus
@@ -304,24 +316,79 @@
 	<!-- Main Content -->
 	<main>
 
-		<!-- Media Background -->
-		<div class="media-background" data-background="img/gallery/hero.jpg" data-overlay="black; .4">
+		<div class="container pt-13 pb-11">
 
-			<!-- Caption Text -->
-			<div class="media-background-caption">
-				<h1 data-animation="fade-in-bottom 1.2s">Hello, I'm Tai!</h1>
-				<h3 class="lead font-os" data-animation="fade-in-bottom .7s .5s">
-					<span><!--And I'm a Developer <br> -->I'm a</span>
-					<span class="text-light" data-typed="Web Developer; Traveler; Cloud Practitioner; Full Stack Developer"></span>
-				</h3>
+			<h1 class="text-center">STORIES</h1>
+			<p class="separator"></p>
+
+			<!-- Blog List -->
+			<div class="blog-list">
+
+				<article>
+					<a href="#">
+						<div class="img">
+							<div class="img-inner lazy-load" data-background="img/folio/1.jpg"></div>
+						</div>
+						<p class="font-monospace">14 July, 2019 | Design</p>
+						<h3>Deleniti at architecto cupiditate similique perspiciatis</h3>
+					</a>
+				</article>
+
+				<article>
+					<a href="#">
+						<div class="img">
+							<div class="img-inner lazy-load" data-background="img/folio/2.jpg"></div>
+						</div>
+						<p class="font-monospace">14 July, 2019 | Design</p>
+						<h3>Deleniti at architecto cupiditate similique perspiciatis</h3>
+					</a>
+				</article>
+
+				<article>
+					<a href="#">
+						<div class="img">
+							<div class="img-inner lazy-load" data-background="img/folio/3.jpg"></div>
+						</div>
+						<p class="font-monospace">14 July, 2019 | Design</p>
+						<h3>Deleniti at architecto cupiditate similique perspiciatis</h3>
+					</a>
+				</article>
+
 			</div>
-			<!-- /Caption Text -->
+			<!-- /Blog List -->
 
 		</div>
-		<!-- Media Background -->
-		
+
+		<!-- Page Navigation -->
+		<div class="page-nav">
+			<h6>See More</h6>
+			<h1>
+				<a href="#" class="disabled">Newer</a> / 
+				<a href="#">Older</a>
+			</h1>
+		</div>
+		<!-- /Page Navigation -->
+
 	</main>
 	<!-- /Main Content -->
+
+<!-- Footer -->
+<footer class="page-footer">
+
+	<!-- Social Links -->
+	<div class="footer-social-links">
+		<a href="#" class="color-facebook">Facebook</a>
+		<a href="#" class="color-instagram">Instagram</a>
+		<a href="#" class="color-linkedin">Linkedin</a>
+		<a href="#" class="color-twitter">Twitter</a>
+		<a href="#" class="color-youtube">Youtube</a>
+	</div>
+
+	<!-- Copyright -->
+	<small class="mt-4">&copy; Copyright; AchtungThemes</small>
+
+</footer>
+<!-- /Footer -->
 
 	<!-- JS -->
 	<script src="js/core.js"></script>

@@ -15,7 +15,7 @@
 	<div id="preloader"></div>
 
 	<!-- Header -->
-	<header id="header" class="header-transparent">
+	<header id="header">
 
 		<!-- Logo -->
 		<a href="/" class="logo">
@@ -85,11 +85,23 @@
 			<!-- About -->
 			<section id="about">
 				
-				<h1 class="capitalize mb-5">About Me<br></h1>
+				<h1 class="capitalize mb-5">We are creative digital<br> design agency</h1>
+				
+				<!-- Slider -->
+				<div class="swiper" data-autoplay="3000" data-effect="fade" data-loop="true" data-nav="true" data-pagination="true">
+					<div class="swiper-slide">
+						<img src="img/gallery/20.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="img/gallery/21.jpg" alt="">
+					</div>
+				</div>
+				<!-- /Slider -->
 
 				<div class="row pt-5">
 					<div class="col-md">
-						<img src="img/portfolioPic.png" alt="">
+						<p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam fugiat culpa quibusdam voluptates eum repellendus
+							nostrum laborum, ullam iure sunt voluptatem minima aut similique quia tenetur vel exercitationem est facere.</p>
 					</div>
 					<div class="col-md">
 						<p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam fugiat culpa quibusdam voluptates eum repellendus
@@ -304,22 +316,193 @@
 	<!-- Main Content -->
 	<main>
 
-		<!-- Media Background -->
-		<div class="media-background" data-background="img/gallery/hero.jpg" data-overlay="black; .4">
+		<div class="container large w-100 pt-9">
 
-			<!-- Caption Text -->
-			<div class="media-background-caption">
-				<h1 data-animation="fade-in-bottom 1.2s">Hello, I'm Tai!</h1>
-				<h3 class="lead font-os" data-animation="fade-in-bottom .7s .5s">
-					<span><!--And I'm a Developer <br> -->I'm a</span>
-					<span class="text-light" data-typed="Web Developer; Traveler; Cloud Practitioner; Full Stack Developer"></span>
-				</h3>
+			<!-- Portfolio Filter -->
+			<div class="portfolio-carousel-filter portfolio-filter">
+				<span data-filter="*" class="is-active">All</span>
+				<span data-filter=".branding">Branding</span>
+				<span data-filter=".design">Design</span>
+				<span data-filter=".photography">Photography</span>
 			</div>
-			<!-- /Caption Text -->
+			<!-- /Portfolio Filter -->
 
+			<!-- Portfolio Slider -->
+			<div class="portfolio-carousel swiper-container">
+				<div class="swiper-wrapper">
+
+					<figure class="swiper-slide portfolio-item project-item design">
+						<div class="inner">
+							<!-- Image -->
+							<div class="item-img" data-background="img/folio/1.jpg"></div>
+							<!-- URL / Lightbox -->
+							<a href="portfolio-single.html" class="item-link"></a>
+							<!-- Caption -->
+							<figcaption>
+								<p>Project Page</p>
+								<h2 class="item-title">Project Single</h2>
+							</figcaption>
+						</div>
+					</figure>
+
+					<figure class="swiper-slide portfolio-item image-item branding">
+						<div class="inner">
+							<!-- Image -->
+							<div class="item-img" data-background="img/folio/2.jpg"></div>
+							<!-- URL / Lightbox -->
+							<a href="img/folio/2.jpg" class="item-link" data-lightbox></a>
+							<!-- Caption -->
+							<figcaption>
+								<p>Project Image</p>
+								<h2 class="item-title">Image Lightbox</h2>
+							</figcaption>
+						</div>
+					</figure>
+
+					<figure class="swiper-slide portfolio-item video-item photography">
+						<div class="inner">
+							<!-- Image -->
+							<div class="item-img" data-background="img/folio/14.jpg"></div>
+							<!-- URL / Lightbox -->
+							<a href="https://www.youtube.com/watch?v=UXEbtqU_dHs" class="item-link" data-lightbox></a>
+							<!-- Caption -->
+							<figcaption>
+								<p>Project YouTube</p>
+								<h2 class="item-title">YouTube Lightbox</h2>
+							</figcaption>
+						</div>
+					</figure>
+
+					<figure class="swiper-slide portfolio-item gallery-item branding">
+						<div class="inner">
+							<!-- Image -->
+							<div class="item-img" data-background="img/folio/6.jpg"></div>
+							<!-- URL / Lightbox -->
+							<a href="img/folio/6.jpg" class="item-link" data-lightbox="my-project-2" data-thumbnail="img/folio/6.jpg"></a>
+							<!-- Gallery Images -->
+							<div class="item-gallery">
+								<a href="img/folio/5.jpg" data-lightbox="my-project-2" data-thumbnail="img/folio/5.jpg"></a>
+								<a href="img/folio/10.jpg" data-lightbox="my-project-2" data-thumbnail="img/folio/10.jpg"></a>
+								<a href="img/folio/11.jpg" data-lightbox="my-project-2" data-thumbnail="img/folio/11.jpg"></a>
+								<a href="img/folio/15.jpg" data-lightbox="my-project-2" data-thumbnail="img/folio/15.jpg"></a>
+								<a href="img/folio/1.jpg" data-lightbox="my-project-2" data-thumbnail="img/folio/1.jpg"></a>
+								<a href="img/folio/2.jpg" data-lightbox="my-project-2" data-thumbnail="img/folio/2.jpg"></a>
+								<a href="img/folio/14.jpg" data-lightbox="my-project-2" data-thumbnail="img/folio/14.jpg"></a>
+							</div>
+							<!-- Caption -->
+							<figcaption>
+								<p>Project Gallery Thumbnails</p>
+								<h2 class="item-title">Gallery Thumbnails</h2>
+							</figcaption>
+						</div>
+					</figure>
+
+					<figure class="swiper-slide portfolio-item video-item branding">
+						<div class="inner">
+							<!-- Image -->
+							<div class="item-img" data-background="img/folio/7.jpg"></div>
+							<!-- URL / Lightbox -->
+							<a href="https://vimeo.com/114651024" class="item-link" data-lightbox></a>
+							<!-- Caption -->
+							<figcaption>
+								<p>Project Vimeo</p>
+								<h2 class="item-title">Vimeo Lightbox</h2>
+							</figcaption>
+						</div>
+					</figure>
+
+					<figure class="swiper-slide portfolio-item gallery-item design">
+						<div class="inner">
+							<!-- Image -->
+							<div class="item-img" data-background="img/folio/5.jpg"></div>
+							<!-- URL / Lightbox -->
+							<a href="img/folio/5.jpg" class="item-link" data-lightbox="my-project-1"></a>
+							<!-- Gallery Images -->
+							<div class="item-gallery">
+								<a href="img/folio/10.jpg" data-lightbox="my-project-1"></a>
+								<a href="img/folio/11.jpg" data-lightbox="my-project-1"></a>
+								<a href="img/folio/15.jpg" data-lightbox="my-project-1"></a>
+								<a href="img/folio/1.jpg" data-lightbox="my-project-1"></a>
+								<a href="img/folio/2.jpg" data-lightbox="my-project-1"></a>
+								<a href="img/folio/14.jpg" data-lightbox="my-project-1"></a>
+							</div>
+							<!-- Caption -->
+							<figcaption>
+								<p>Project Gallery</p>
+								<h2 class="item-title">Gallery Lightbox</h2>
+							</figcaption>
+						</div>
+					</figure>
+
+					<figure class="swiper-slide portfolio-item video-item photography">
+						<div class="inner">
+							<!-- Image -->
+							<div class="item-img" data-background="img/folio/11.jpg"></div>
+							<!-- URL / Lightbox -->
+							<a href="https://videos.ctfassets.net/ckso4uqg4vio/4iwMDvrbtow1TeC76SCxYX/f3f70cc201df38bcd65d43754cd469a5/ZWAK9812H_Only_Slightly_More_Exaggerated_90_HD_Web_YouTube.mp4" class="item-link" data-lightbox></a>
+							<!-- Caption -->
+							<figcaption>
+								<p>Project Local Video</p>
+								<h2 class="item-title">Local Video Lightbox</h2>
+							</figcaption>
+						</div>
+					</figure>
+
+					<figure class="swiper-slide portfolio-item project-item design">
+						<div class="inner">
+							<!-- Image -->
+							<div class="item-img" data-background="img/folio/10.jpg"></div>
+							<!-- URL / Lightbox -->
+							<a href="portfolio-single.html" class="item-link"></a>
+							<!-- Caption -->
+							<figcaption>
+								<p>Project Page</p>
+								<h2 class="item-title">Project Single</h2>
+							</figcaption>
+						</div>
+					</figure>
+
+					<figure class="swiper-slide portfolio-item image-item photography">
+						<div class="inner">
+							<!-- Image -->
+							<div class="item-img" data-background="img/folio/15.jpg"></div>
+							<!-- URL / Lightbox -->
+							<a href="img/folio/15.jpg" class="item-link" data-lightbox></a>
+							<!-- Caption -->
+							<figcaption>
+								<p>Project Image</p>
+								<h2 class="item-title">Image Lightbox</h2>
+							</figcaption>
+						</div>
+					</figure>
+
+
+				</div>
+			</div>
+			<!-- /Portfolio Slider -->
+
+			<!-- Portfolio Footer -->
+			<div class="portfolio-carousel-footer">
+				<!-- Copyright -->
+				<small>&copy; Copyright; AchtungThemes</small>
+
+				<!-- Portfolio Controls -->
+				<div class="portfolio-carousel-controls swiper-controls">
+					<div class="prev-btn"></div>
+					<div class="next-btn"></div>
+				</div>
+
+				<!-- Social Links -->
+				<div class="footer-social-links small uppercase">
+					<a href="#" class="color-instagram">Instagram</a>
+					<a href="#" class="color-facebook">Facebook</a>
+					<a href="#" class="color-youtube">Youtube</a>
+				</div>
+			</div>
+			<!-- /Portfolio Footer -->
+			
 		</div>
-		<!-- Media Background -->
-		
+
 	</main>
 	<!-- /Main Content -->
 
