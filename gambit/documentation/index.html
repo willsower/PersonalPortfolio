@@ -1,0 +1,560 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Gambit - Documentation</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="img/favicon.png">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/prism.css">
+	<style>
+		body {
+			position: relative;
+		}
+		.docs h4{
+			text-transform: capitalize;
+			margin-top: 25px;
+			font-weight: bold;
+		}
+		.docs h1{
+			text-transform: capitalize;
+		}
+		#menus{
+			margin-top: 20px;
+		}
+		ul{
+			list-style: none;
+		}
+		a:focus{
+			outline: 0;
+			text-decoration: none;
+		}
+		.nav>li>a:hover, .nav>li>a:focus{
+			background: none;
+		}
+		#nav{margin-top: 20px;}
+		#nav.fixed{
+			position: fixed;
+			top: 0px;
+		}
+		.nav > li > a{
+			display: block;
+			text-transform: capitalize;
+			padding: 4px 20px;
+			color: #767676;
+		}
+		.nav > li > a:hover{
+			border-left: 2px solid #000;
+			padding-left: 18px;
+			background: none;
+		}
+		.nav ul > li > a{
+			display: block;
+			padding: 1px 30px;
+			text-transform: capitalize;
+			color: #767676;
+		}
+		.nav > li.active > a{
+			border-left: 2px solid #000;
+			padding-left: 18px;
+			color: #000;
+		}
+		.nav ul li.active > a{
+			border-left: 2px solid #000;
+			padding-left: 28px;
+			color: #000;
+		}
+		.nav ul{
+			display: none;
+			margin: 0;
+			padding: 0
+		}
+		.nav>li.active ul{
+			display: block;
+		}
+		footer{
+			margin-top: 100px;
+			height: 100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #787878;
+			border-top: 1px solid rgba(0, 0, 0, .1);
+		}
+
+
+
+		.hero {
+			padding: 50px 0 70px;
+			color: #fff;
+			background-image: linear-gradient( 135deg, #af4e98 10%, #0D25B9 100%);
+		}
+		.hero h1 {
+			font-size: 60px;
+		}
+		.hero p {
+			font-size: 18px;
+			font-weight: 300;
+			color: rgba(255, 255, 255, .5);
+		}
+		.hero a {
+			color: rgba(255, 255, 255, .9);
+		}
+
+		.hero + .container {
+			padding-top: 50px;
+		}
+		
+		section[data-name] {
+			margin-bottom: 110px;
+		}
+	</style>
+</head>
+
+
+<body data-spy="scroll" data-target="#nav" data-offset="120">
+
+	<div class="hero">
+		<div class="container">
+		<h1>Gambit Documentation</h1>
+		<p class="text-capitalize small">Thank you for being here <br>
+		Have any questions? <a href="http://themeforest.net/user/achtungthemes#contact">contact us</a></p>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+
+
+			<!-- docs -->
+			<div class="col-md-9 docs">
+
+
+				<section data-name="start">
+					<h1>start</h1>
+					<hr>
+					<h4>editing</h4>
+					<p>To modify HTML files you should use text editor, we recommend <i><b>VS Code</b></i> or <i><b>Sublime Text</b></i>.</p>
+					<h4>publishing</h4>
+					<p>At first choose your homepage from HTML files and rename it to <b>index.html</b>, then upload files to your server (use FTP client, we recommend <i><b>Filezilla</b></i>).</p>
+				</section>
+
+
+
+				<section data-name="dark theme">
+					<h1>Dark Theme</h1>
+					<hr>
+					<p>To enable dark theme add <code>.dark-theme</code> class to <code>body</code></p>
+					<script data-scheme="html" type="text/html">
+						<body class="dark-theme">
+							...
+					</script>
+				</section>
+
+
+				<section data-name="lightbox">
+					<h1>Lightbox</h1>
+					<hr>
+					<p>To open your media with Lightbox, create a link and add the attribute <code>data-lightbox</code></p>
+					<p>Lightbox also supports Youtube, Vimeo and HTML5 videos</p>
+					<script data-scheme="html" type="text/html">
+						<a href="https://media-source" data-lightbox title="Caption"></a>
+					</script>
+					<br>
+					<p>Links with the same <b><i>data-lightbox</i></b> attribute will open all of them as a collection.</p>
+					<script data-scheme="html" type="text/html">
+						<a href="https://media-source1" data-lightbox="mygallery" title="Caption"></a>
+						<a href="https://media-source2" data-lightbox="mygallery" title="Caption"></a>
+					</script>
+					<br>
+					<p>Optionally you can add thumbnails by adding <code>data-thumbnail</code> attribute to links</p>
+					<script data-scheme="html" type="text/html">
+						<a href="https://media-source1" data-lightbox="mygallery" data-thumbnail="thumb1.jpg" title="Caption"></a>
+						<a href="https://media-source2" data-lightbox="mygallery" data-thumbnail="thumb2.jpg" title="Caption"></a>
+					</script>
+				</section>
+
+
+				<section data-name="masonry">
+					<h1>Masonry</h1>
+					<hr>
+					<p>Use following attributes to setup Masonry Portfolio.</p>
+				
+					<table class="table table-bordered table-striped">
+						<thead>
+							<tr>
+								<th width="160">Attr</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>data-columns</td>
+								<td>Column count</td>
+							</tr>
+							<tr>
+								<td>data-gutter</td>
+								<td>Space between items</td>
+							</tr>
+						</tbody>
+					</table>
+				
+					<script data-scheme="html" type="text/html">
+						<!-- Portfolio -->
+						<div class="masonry" data-columns="3" data-gutter="30">
+					
+							<!-- Portfolio Item -->
+							<figure>
+								...
+							</figure>
+					
+							...
+					
+						</div>
+						<!-- /Portfolio -->
+					</script>
+				</section>
+
+
+
+
+				<section data-name="portfolio grid">
+					<h1>Portfolio Grid</h1>
+					<hr>
+					<p>Use following attributes to setup Portfolio grid.</p>
+
+					<table class="table table-bordered table-striped">
+						<thead>
+							<tr>
+								<th width="160">Attr</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>data-columns</td>
+								<td>Column count</td>
+							</tr>
+							<tr>
+								<td>data-gutter</td>
+								<td>Space between items</td>
+							</tr>
+							<tr>
+								<td>data-cell-ratio</td>
+								<td>Default item aspect ratio</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<p>To Change item sizes use <code>.wide</code> and <code>.tall</code> classes</p>
+
+					<script data-scheme="html" type="text/html">
+						<!-- Portfolio Grid -->
+						<div class="grid" data-columns="3" data-gutter="5" data-cell-ratio="5/4">
+							...
+						</div>
+						<!-- /Portfolio Grid -->	
+					</script>		
+				</section>
+
+
+
+
+				<section data-name="justified grid">
+					<h1>Justified Grid</h1>
+					<hr>
+					<table class="table table-bordered table-striped">
+						<thead>
+							<tr>
+								<th width="160">Attr</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>data-target-height</td>
+								<td>Row height (target)</td>
+							</tr>
+							<tr>
+								<td>data-gutter</td>
+								<td>Space between items</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<script data-scheme="html" type="text/html">
+						<!-- Justified Gallery -->
+						<div class="justified-grid" 
+						     data-target-height="500" 
+						     data-gutter="5">
+
+							...
+
+						</div>
+						<!-- /Justified Gallery -->
+					</script>							
+				</section>
+
+
+				<section data-name="portfolio filters">
+					<h1>Portfolio Filters</h1>
+					<hr>
+					<p>For your portfolio items to assign category use <b><i>classnames</i></b></p>
+					<script data-scheme="html" type="text/html">
+						<figure class="portfolio-item photography branding">
+							...
+						</figure>
+					</script>
+					<p>Add filters with <code>data-filter</code> attribute and <b><i>classname</i></b> selectors</p>
+					<script data-scheme="html" type="text/html">
+						<!-- portfolio filter -->
+						<div id="filter" class="portfolio-filter">
+							<span data-filter="*" class="is-active">All</span>
+							<span data-filter=".branding">Branding</span>
+							<span data-filter=".design">Design</span>
+							<span data-filter=".photography">Photography</span>
+						</div>
+					</script>
+				</section>
+
+
+				<section data-name="typed text">
+					<h1>Typed Text</h1>
+					<hr>
+					<p>To add text typing animation use <code>data-typed</code> attribute with words (separated with semicolon).</p>
+					<script data-scheme="html" type="text/html">
+						<span data-typed="React lover; Traveler; Enthusiast"></span>
+					</script>
+				</section>
+
+
+
+				<section data-name="video background">
+					<h1>Video Background</h1>
+					<hr>
+					<p>Use following attributes to setup video background. It supports Youtube, Vimeo and Local videos.</p>
+
+					<table class="table table-bordered table-striped">
+						<thead>
+							<tr>
+								<th width="160">Attr</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>data-videobg-src</td>
+								<td>Video URL (Youtube, Vimeo or Local video)</td>
+							</tr>
+							<tr>
+								<td>data-video-ratio</td>
+								<td>(optional) default value is 16/9</td>
+							</tr>
+							<tr>
+								<td>data-poster</td>
+								<td>Poster Image URL.</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<script data-scheme="html" type="text/html">
+						<!-- Video Background -->
+						<div data-videobg-src="https://video-url" 
+							 data-video-ratio="22/9" 
+							 data-poster="poster-image.jpg">
+						</div>
+						<!-- /Video Background -->
+					</script>
+				</section>
+
+
+
+
+
+
+				<section data-name="thumbnail videos">
+					<h1>Thumbnail Videos</h1>
+					<hr>
+					<p>Thumbnail Video element will load original video (iframe) only after clicking play button. It supports Youtube,
+						Vimeo and Local videos</p>
+					<script data-scheme="html" type="text/html">
+						<div class="thumbnail-video" 
+							 data-src="https://video-url" 
+							 data-poster="thumbnail-image.jpg">
+						</div>
+					</script>
+				</section>
+
+
+
+				<section data-name="buttons">
+					<h1>Buttons</h1>
+					<hr>
+					<p>You can use 7 predefined styles for buttons</p>
+					<script data-scheme="html" type="text/html">
+						<!-- Dark Buttons -->
+						<a href="#" class="button style-1">Button</a>
+						<a href="#" class="button style-2">Button</a>
+						...
+						<a href="#" class="button style-7">Button</a>
+
+
+						<!-- Light Buttons -->
+						<a href="#" class="button text-light style-1">Button</a>
+						<a href="#" class="button text-light style-2">Button</a>
+						...
+						<a href="#" class="button text-light style-7">Button</a>
+					</script>		
+				</section>
+
+
+
+
+				<section data-name="appear animations">
+					<h1>Appear Animations</h1>
+					<hr>
+					<p>Add appear animations with <code>data-animation</code> attribute. Set animation-name, duration and delay like in the example below.</p>
+					<p>You can use 4 predefined animation names <code>fade-in-bottom</code> <code>fade-in-left</code> <code>fade-in-right</code> <code>fade-in-top</code>.</p>
+					<p><a href="https://daneden.github.io/animate.css/" target="_blank">Animate.css</a> library is also supported.</p>
+					<script data-scheme="html" type="text/html">
+						<!-- data-animation="animation-name duration delay" -->
+						<div data-animation="fade-in-bottom 500ms 500ms"></div>
+						<div data-animation="fade-in-left 1s .5s"></div>
+					</script>		
+				</section>
+
+
+
+
+				<section data-name="spacing classes">
+					<h1>Spacing Classes</h1>
+					<hr>
+					<p>Class Names like <code>.px-5</code> <code>.mb-0</code> <code>.my-10</code> are <a href="https://getbootstrap.com/docs/4.0/utilities/spacing/" target="_blank">Bootstrap Spacing Classes</a>. Sizes are extended up to 15.</p>
+					<script data-scheme="html" type="text/html">
+						<!-- padding left -->
+						<div class="pl-5"></div>
+
+						<!-- padding right -->
+						<div class="pr-12"></div>
+
+						<!-- margin top -->
+						<div class="mt-15"></div>
+
+						<!-- margin bottom -->
+						<div class="mb-7"></div>
+					</script>
+				</section>
+
+
+
+				<section data-name="background and overlay">
+					<h1>Backgrounds & Overlays</h1>
+					<hr>
+					<p>Set Backgrounds with <code>data-background</code> attribute. Set image URL, HEX or RGB color codes</p>
+					<script data-scheme="html" type="text/html">
+						<div data-background="bg-image.jpg"></div>
+
+						<div data-background="#000"></div>
+
+						<div data-background="rgb(0, 0, 0)"></div>
+					</script>
+					
+					<br>
+					<p>Use <code>data-overlay</code> attribute to set overlay color and opacity (separated with semicolon)</p>
+					<script data-scheme="html" type="text/html">
+						<div data-background="bg-image.jpg" data-overlay="black; .5"></div>
+
+						<div data-background="bg-image.jpg" data-overlay="#000; .5"></div>
+					</script>		
+				</section>
+
+
+
+
+				<section data-name="contact form">
+					<h1>Contact Form</h1>
+					<hr>
+					<table class="table table-bordered table-striped">
+						<thead>
+							<tr>
+								<th width="160">Attr</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>data-mailto</td>
+								<td>Recipients E-mail address</td>
+							</tr>
+							<tr>
+								<td>data-subject</td>
+								<td>Subject Line</td>
+							</tr>
+						</tbody>
+					</table>
+					<script data-scheme="html" type="text/html">
+						<!-- Contact Form -->
+						<form class="mail-form" 
+						      action="php/mail.php" 
+						      data-mailto="example@email.com" 
+						      data-subject="Subject Line">
+							...
+						</form>
+						<!-- Contact Form -->
+					</script>
+					<p>You can remove <code>data-mailto</code> and <code>data-subject</code> attributes from HTML and configure from php/mail.php file, <b>LINE 3</b> and <b>LINE 8</b></p>
+				</section>
+
+
+
+
+				<section data-name="google map">
+					<h1>Google Map</h1>
+					<hr>
+					<p>Api Key is <b>required</b>. To get an API key follow <a href="https://developers.google.com/maps/documentation/javascript/get-api-key#get-an-api-key" target="_blank">this link</a>.</p>
+					<script data-scheme="html" type="text/html">
+						<!-- Google Map -->
+						<div class="google-map" 
+						     data-api-key="YOUR_API_KEY"
+						     data-latitude="41.646845"
+						     data-longitude="41.618846"
+						     data-zoom="13"
+						     data-marker="img/map-marker.png"></div>
+						<!-- /Google Map -->
+					</script>
+				</section>
+
+
+				<!-- google map -->
+			</div>
+			<!-- /docs -->
+
+
+			<!-- NAVIGATION -->
+			<div class="col-md-3">
+				<nav id="nav" class="hidden-sm hidden-xs">
+					<ul class="nav"></ul>
+				</nav>
+			</div>
+			<!-- /NAVIGATION -->
+
+		</div>
+		<!-- row -->
+	</div>
+	<!-- /container -->
+
+
+	<footer class="text-center">
+		2018 © AchtungThemes
+	</footer>
+
+
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/prism-line-highlight.min.js" data-manual></script>
+	<script src="js/docs.js"></script>
+</body>
+</html>
