@@ -54,11 +54,8 @@
 					<p class="separator-left"></p>
 				</div>
 				<div class="col-md-6" data-animation="fade-in-bottom 1s .2s">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quae, totam mollitia sequi vero eum
-						facilis harum rerum nobis, cum ut quaerat reprehenderit numquam quos, minus perspiciatis
-						perferendis. Enim, perferendis.</p>
-					<p>Ea aspernatur debitis rerum repellat, optio corporis laborum. Enim ducimus, temporibus minus facilis.
-						Quae ratione voluptatem porro voluptas tenetur vel.</p>
+					<p>Designing and developing a text-to-speech application that can read LaTeX documents and give an audio response. For this project, it was brought to us by a client wanting to upload TeX documents and listening to them. Currently, there is no application out there that performs this operation.</p>
+					<p>This application is currently a work in progress. We are creating a parser that will pull LaTeX math mode, and latex commands/environments which we will feed to Amazon Polly (text-to-speech sythesizer) using a Speech Sythesis Markup Language (SSML). Using AWS tools, we will also host our web application through their services.</p>
 				</div>
 			</div>
 			<!-- /about -->
@@ -79,7 +76,7 @@
 				<div class="col-md-3" data-animation="fade-in-bottom 1s .4s">
 					<h6 class="uppercase mt-7 mb-4">Languages & Tools Used</h6>
 					<p>
-						Python / LaTeX / Amazon Polly / AWS EC2 / HTML / CSS / JavaScript
+						Python / LaTeX / Amazon Polly / AWS EC2 / HTML / CSS / JavaScript / SSML
 					</p>
 				</div>
 
@@ -94,76 +91,30 @@
 			<!-- /details -->
 
 		</div>
-
-		<section data-background="#222">
-			<div class="container py-10">
-
-				<!-- Project Video -->
-				<div class="thumbnail-video" data-src="https://www.youtube.com/watch?v=UXEbtqU_dHs" data-poster="img/folio/3.jpg"></div>
-
-				<!-- Project Text -->
-				<div class="row">
-					<div class="offset-md-2 col-md-8 text-light pt-6 pt-md-10">
-						<h2>Adipisci expedita quo harum voluptatum aperiam animi</h2>
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-							Quia tenetur quibusdam libero? Modi repellendus perferendis commodi qui repudiandae vel porro
-							aperiam animi, maiores error eius expedita asperiores sed quibusdam quos!</p>
-					</div>
+		
+		<section data-background = "#222">
+			<div class="container pt-10 pb-10">
+				<h1 class="uppercase text-center text-light">Gallery</h1>
+				<p class="separator"></p>
+	
+				<!-- Gallery Grid -->
+				<div class="grid masonry-grid mt-9" data-columns="2" data-gutter="2">
+					<figure>
+						<a href="img/folio/tex2speech/homePage.PNG" class="lazy-load" data-background="img/folio/tex2speech/homePage.PNG"
+							data-lightbox="gallery"></a>
+					</figure>
+					<figure>
+						<a href="img/folio/tex2speech/upload.PNG" class="lazy-load" data-background="img/folio/tex2speech/upload.PNG"
+							data-lightbox="gallery"></a>
+					</figure>
 				</div>
-
+				<!-- /Gallery Grid -->
+	
 			</div>
 		</section>
 
-
-		<div class="container pt-10 pb-10">
-			<h1 class="uppercase text-center">Gallery</h1>
-			<p class="separator"></p>
-
-			<!-- Gallery Grid -->
-			<div class="grid masonry-grid mt-9" data-columns="3" data-gutter="2">
-				<figure>
-					<a href="img/folio/1.jpg" class="lazy-load" data-background="img/folio/1.jpg"
-						data-lightbox="gallery"></a>
-				</figure>
-				<figure>
-					<a href="img/folio/2.jpg" class="lazy-load" data-background="img/folio/2.jpg"
-						data-lightbox="gallery"></a>
-				</figure>
-				<figure>
-					<a href="img/folio/14.jpg" class="lazy-load" data-background="img/folio/14.jpg"
-						data-lightbox="gallery"></a>
-				</figure>
-				<figure>
-					<a href="img/folio/6.jpg" class="lazy-load" data-background="img/folio/6.jpg"
-						data-lightbox="gallery"></a>
-				</figure>
-				<figure>
-					<a href="img/folio/7.jpg" class="lazy-load" data-background="img/folio/7.jpg"
-						data-lightbox="gallery"></a>
-				</figure>
-				<figure>
-					<a href="img/folio/5.jpg" class="lazy-load" data-background="img/folio/5.jpg"
-						data-lightbox="gallery"></a>
-				</figure>
-				<figure>
-					<a href="img/folio/11.jpg" class="lazy-load" data-background="img/folio/11.jpg"
-						data-lightbox="gallery"></a>
-				</figure>
-				<figure>
-					<a href="img/folio/10.jpg" class="lazy-load" data-background="img/folio/10.jpg"
-						data-lightbox="gallery"></a>
-				</figure>
-				<figure>
-					<a href="img/folio/15.jpg" class="lazy-load" data-background="img/folio/15.jpg"
-						data-lightbox="gallery"></a>
-				</figure>
-			</div>
-			<!-- /Gallery Grid -->
-
-		</div>
-
 		<!-- Page Navigation -->
-		<div class="page-nav">
+		<div class="page-nav" style = "padding-top: 11rem !important;">
 			<h6>See Next</h6>
 			<h1>
 				<a href="project3.html">Pre-Onboarding Skill - Alexa Hackathon</a>
