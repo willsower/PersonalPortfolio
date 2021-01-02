@@ -54,11 +54,8 @@
 					<p class="separator-left"></p>
 				</div>
 				<div class="col-md-6" data-animation="fade-in-bottom 1s .2s">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quae, totam mollitia sequi vero eum
-						facilis harum rerum nobis, cum ut quaerat reprehenderit numquam quos, minus perspiciatis
-						perferendis. Enim, perferendis.</p>
-					<p>Ea aspernatur debitis rerum repellat, optio corporis laborum. Enim ducimus, temporibus minus facilis.
-						Quae ratione voluptatem porro voluptas tenetur vel.</p>
+					<p>The Pre-Onboarding Skill which was proposed by our team, was to solve the onboarding problem at Amazon. We proposed a skill that could be used by oncomming workers to ask when important documents are due, or whether they have been received on the other end. There was a need for this, since currently email was how oncomming workers were tracking their important paperwork.</p>
+					<p>This skill uses JavaScript as the primary language, we used DynamoDB to store user information. Lambda functions were used to access that information, and also update the information. This was intended to show, that when something gets submitted, the database would change accordingly, so users could get immediete results when they have completed something.</p>
 				</div>
 			</div>
 			<!-- /about -->
@@ -96,23 +93,30 @@
 		</div>
 
 		<section data-background="#222">
-			<div class="container py-10 row mt-4 makeLeft">
+			<div class="container mt-8 py-9 py-md-9">
+				<div class="row">
+					<!-- Project Video -->
+					<div class = "col-md-6">
+						<video width = 100% controls poster="">
+							<source class = "thumbnail-video" src="video/alexa.mp4" type="video/mp4">
+						</video>
+					</div>
 
-				<!-- Project Video -->
-				<div class = "col-md-3">
-					<video width = 100% controls poster="">
-						<source class = "thumbnail-video" src="video/alexa.mp4" type="video/mp4">
-					</video>
-				</div>
-
-				<!-- Project Text -->
-				<div class="col-md-8">
-					<div class="offset-md-2 col-md-8 text-light pt-6 pt-md-10">
-						<h2>Pre-Onboarding Skill Video</h2>
-						<p>Here is a video of sample commands we read to Amazon Track, our Alexa Skill. Alexa will</p>
+					<!-- Project Text -->
+					<div class="col-md-6">
+						<div class="offset-md-2 text-light pt-6 pt-md-10">
+							<h2>Pre-Onboarding Skill Video</h2>
+							<p>Here is a video of sample commands we read to Amazon Track, our Alexa Skill. Alexa is actively grabbing information from DynamoDB, and reading aloud the answers.<br><br><br><br>
+							Questions asked in this demo, but not limited to:<br><br>
+							When is my start date?<br><br>
+							Who is my manager?<br><br>
+							When is my next onboarding document due?<br><br>
+							Has my background check been processed?<br><br>
+							What is the status of my I-9 form?
+						</p>
+						</div>
 					</div>
 				</div>
-
 			</div>
 		</section>
 
