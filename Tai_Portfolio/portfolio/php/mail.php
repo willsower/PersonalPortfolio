@@ -28,18 +28,19 @@ foreach ($_POST['items'] as $key => $value) {
 $body .= "</table>\r\n";
 $body .= "</html></body>";
 
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-$headers = "From: " . $from_str . "\r\n";
-$headers .= "Reply-To: " . $from_email . "\r\n";
-// $headers .= "CC: \r\n";
-$headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+//Send email & retrieve status
+$IsSent = mail($mailto, $subject, $body, $headers);
 
-if (mail ($mailto, $subject, $body, $headers)) {
-	echo '<p>Your message has been sent!</p>';
+//Status message (message accepted by SMTP server, may still fail for other reasons).
+if ($IsSent) {
+    $status = "<br>HTML email sent to $toEmail";
 } else {
-	echo '<p class="error">Something went wrong, try again!</p>';
+    $status = "Please enter email address for recipient and sender";
 }
 
+echo "</div>$status</div>";
 
 ?>

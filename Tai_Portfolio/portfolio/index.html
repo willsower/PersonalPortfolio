@@ -224,17 +224,18 @@
 				<!-- contact form -->
 				<form class="mail-form" 
 					  action="php/mail.php" 
-					  data-mailto="where_to_send_email@example.com"
-					  data-subject="Gambit Subject Line">
+					  data-mailto="taichen.rose0@gmail.com"
+					  data-subject="From Personal Web application"
+					  method = "post">
 					<div class="row">
 						<div class="col-md mb-3">
-							<input type="text" placeholder="Name:">
+							<input type="text" name = "name" placeholder="Name:">
 						</div>
 						<div class="col-md mb-3">
-							<input type="text" placeholder="Email:">
+							<input type="text" name = "email" placeholder="Email:">
 						</div>
 						<div class="col-12">
-							<textarea name="" id="" rows="6" placeholder="Message..."></textarea>
+							<textarea name="message" id="" rows="6" placeholder="Message..."></textarea>
 						</div>
 						<div class="col-12">
 							<button type="submit" class="button style-2 mb-0">Send</button>
