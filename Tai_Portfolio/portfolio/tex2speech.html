@@ -1,147 +1,224 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Tex2Speech Project</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="img/favicon.ico">
-	<link rel="stylesheet" href="css/core.css">
-	<link rel="stylesheet" href="css/theme.css">
-	<link rel="stylesheet" href="css/add.css">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tex2Speech Project</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/add.css" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-	<!-- Preloader -->
-	<div id="preloader"></div>
+    <!-- Header -->
+    <header id="header">
+      <!-- Logo -->
+      <a href="index.html" class="logo"> TAICHEN ROSE </a>
 
-	<!-- Header -->
-	<header id="header">
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li>
+            <a href="projects.html">
+              <i class="fa fa-arrow-left mr-2"></i> Back To Projects
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /Navigation -->
 
-		<!-- Logo -->
-		<a href="index.html" class="logo">
-			TAICHEN ROSE
-		</a>
+      <!-- Mobile Menu Button -->
+      <div class="mob-menu-btn"></div>
+    </header>
+    <!-- /Header -->
 
-		<!-- Navigation -->
-		<nav>
-			<ul>
-				<li>
-					<a href="projects.html">
-						<i class="fa fa-arrow-left mr-2"></i> Back To Projects
-					</a>
-				</li>
-			</ul>
-		</nav>
-		<!-- /Navigation -->
+    <!-- Main Content -->
+    <main>
+      <div class="container mt-8 py-9 py-md-9">
+        <!-- about -->
+        <div class="row">
+          <div class="col-md-6" data-animation="fade-in-bottom 1s .1s">
+            <h1 class="uppercase">Tex2Speech</h1>
+            <p class="serif">5 Person Team</p>
+            <p class="separator-left"></p>
+          </div>
+          <div class="col-md-6" data-animation="fade-in-bottom 1s .2s">
+            <p>
+              Designing and developing a text-to-speech application that can
+              read LaTeX documents and give an audio response. For this project,
+              it was brought to us by a client wanting to upload TeX documents
+              and listening to them. Currently, there is no application out
+              there that performs this operation.
+            </p>
+            <p>
+              This application is currently a work in progress. We are creating
+              a parser that will pull LaTeX math mode, and latex
+              commands/environments which we will feed to Amazon Polly
+              (text-to-speech sythesizer) using a Speech Sythesis Markup
+              Language (SSML). Using AWS tools, we will also host our web
+              application through their services.
+            </p>
+          </div>
+        </div>
+        <!-- /about -->
 
-		<!-- Mobile Menu Button -->
-		<div class="mob-menu-btn"></div>
+        <!-- details -->
+        <div class="row mt-4">
+          <div class="col-md-3" data-animation="fade-in-bottom 1s .2s">
+            <h6 class="uppercase mt-7 mb-4">Team Members</h6>
+            <p>
+              Connor Barlow / Walker Herring / Jacob Nemeth / Dylon Rajah /
+              Taichen Rose
+            </p>
+          </div>
 
-	</header>
-	<!-- /Header -->
+          <div class="col-md-3" data-animation="fade-in-bottom 1s .3s">
+            <h6 class="uppercase mt-7 mb-4">Date</h6>
+            <p>September 2020 - Present</p>
+          </div>
 
-	<!-- Main Content -->
-	<main>
+          <div class="col-md-3" data-animation="fade-in-bottom 1s .4s">
+            <h6 class="uppercase mt-7 mb-4">Languages & Tools Used</h6>
+            <p>
+              Python / LaTeX / Amazon Polly / Elastic Beanstalk / S3 / Flask
+            </p>
+          </div>
 
-		<div class="container mt-8 py-9 py-md-9">
+          <div class="col-md-3" data-animation="fade-in-bottom 1s .5s">
+            <h6 class="uppercase mt-7 mb-4">Live</h6>
+            <p>
+              <a
+                href="https://github.com/hutchresearch/latex2speech"
+                class="text-link"
+                >See Project Repository</a
+              >
+            </p>
+          </div>
+        </div>
+        <!-- /details -->
+      </div>
 
-			<!-- about -->
-			<div class="row">
-				<div class="col-md-6" data-animation="fade-in-bottom 1s .1s">
-					<h1 class="uppercase">Tex2Speech</h1>
-					<p class="serif">5 Person Team</p>
-					<p class="separator-left"></p>
-				</div>
-				<div class="col-md-6" data-animation="fade-in-bottom 1s .2s">
-					<p>Designing and developing a text-to-speech application that can read LaTeX documents and give an audio response. For this project, it was brought to us by a client wanting to upload TeX documents and listening to them. Currently, there is no application out there that performs this operation.</p>
-					<p>This application is currently a work in progress. We are creating a parser that will pull LaTeX math mode, and latex commands/environments which we will feed to Amazon Polly (text-to-speech sythesizer) using a Speech Sythesis Markup Language (SSML). Using AWS tools, we will also host our web application through their services.</p>
-				</div>
-			</div>
-			<!-- /about -->
+      <section data-background="#222">
+        <div class="container py-10">
+          <!-- Project Video -->
+          <div>
+            <video
+              width="100%"
+              controls
+              poster="./img/folio/tex2speech/upload.PNG"
+            >
+              <source
+                class="thumbnail-video"
+                src="video/tex2speech.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
 
-			<!-- details -->
-			<div class="row mt-4">
+          <!-- Project Text -->
+          <div class="row">
+            <div class="offset-md-2 col-md-8 text-light pt-6 pt-md-10">
+              <h2>Tex2Speech Demo</h2>
+              <p>
+                Demonstration of Tex2Speech application. In this specific demo, it shows basic math and just hearing the words being said with emphasis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-				<div class="col-md-3" data-animation="fade-in-bottom 1s .2s">
-					<h6 class="uppercase mt-7 mb-4">Team Members</h6>
-					<p>Connor Barlow / Walker Herring / Jacob Nemeth / Dylon Rajah / Taichen Rose</p>
-				</div>
+      <div class="container pt-10 pb-10">
+        <h1 class="uppercase text-center">Gallery</h1>
+        <p class="separator"></p>
 
-				<div class="col-md-3" data-animation="fade-in-bottom 1s .3s">
-					<h6 class="uppercase mt-7 mb-4">Date</h6>
-					<p>September 2020 - Present</p>
-				</div>
+        <!-- Gallery Grid -->
+        <div class="grid masonry-grid mt-9" data-columns="3" data-gutter="2">
+          <figure>
+            <a
+              href="img/folio/tex2speech/upload.PNG"
+              class="lazy-load"
+              data-background="img/folio/tex2speech/upload.PNG"
+              data-lightbox="gallery"
+            ></a>
+          </figure>
+          <figure>
+            <a
+              href="img/folio/tex2speech/home.PNG"
+              class="lazy-load"
+              data-background="img/folio/tex2speech/home.PNG"
+              data-lightbox="gallery"
+            ></a>
+          </figure>
+          <figure>
+            <a
+              href="img/folio/tex2speech/settings.PNG"
+              class="lazy-load"
+              data-background="img/folio/tex2speech/settings.PNG"
+              data-lightbox="gallery"
+            ></a>
+          </figure>
+          <figure>
+            <a
+              href="img/folio/tex2speech/processing.PNG"
+              class="lazy-load"
+              data-background="img/folio/tex2speech/processing.PNG"
+              data-lightbox="gallery"
+            ></a>
+          </figure>
+          <figure>
+            <a
+              href="img/folio/tex2speech/downloadpage.PNG"
+              class="lazy-load"
+              data-background="img/folio/tex2speech/downloadpage.PNG"
+              data-lightbox="gallery"
+            ></a>
+          </figure>
+          <figure>
+            <a
+              href="img/folio/tex2speech/listen.PNG"
+              class="lazy-load"
+              data-background="img/folio/tex2speech/listen.PNG"
+              data-lightbox="gallery"
+            ></a>
+          </figure>
+        </div>
+        <!-- /Gallery Grid -->
+      </div>
 
-				<div class="col-md-3" data-animation="fade-in-bottom 1s .4s">
-					<h6 class="uppercase mt-7 mb-4">Languages & Tools Used</h6>
-					<p>
-						Python / LaTeX / Amazon Polly / AWS EC2 / HTML / CSS / JavaScript / SSML
-					</p>
-				</div>
+      <!-- Page Navigation -->
+      <div class="page-nav">
+        <h6>See Next</h6>
+        <h1>
+          <a href="healthyeats.html">Healthy Eats</a>
+        </h1>
+      </div>
+      <!-- /Page Navigation -->
+    </main>
+    <!-- /Main Content -->
 
-				<div class="col-md-3" data-animation="fade-in-bottom 1s .5s">
-					<h6 class="uppercase mt-7 mb-4">Live</h6>
-					<p>
-						<a href="https://github.com/hutchresearch/latex2speech" class="text-link">See Project Repository</a>
-					</p>
-				</div>
+    <!-- Footer -->
+    <footer class="page-footer">
+      <!-- Social Links -->
+      <div class="footer-social-links">
+        <a
+          href="https://www.linkedin.com/in/taichen-rose-1191b1187/"
+          class="color-linkedin"
+          >Linkedin</a
+        >
+        <a href="https://github.com/willsower" class="color-github">GitHub</a>
+      </div>
 
-			</div>
-			<!-- /details -->
+      <!-- Copyright -->
+      <small class="mt-4">&copy; Copyright; Taichen Rose</small>
+    </footer>
+    <!-- /Footer -->
 
-		</div>
-		
-		<section data-background = "#222">
-			<div class="container pt-10 pb-10">
-				<h1 class="uppercase text-center text-light">Gallery</h1>
-				<p class="separator"></p>
-	
-				<!-- Gallery Grid -->
-				<div class="grid masonry-grid mt-9" data-columns="2" data-gutter="2">
-					<figure>
-						<a href="img/folio/tex2speech/homePage.PNG" class="lazy-load" data-background="img/folio/tex2speech/homePage.PNG"
-							data-lightbox="gallery"></a>
-					</figure>
-					<figure>
-						<a href="img/folio/tex2speech/upload.PNG" class="lazy-load" data-background="img/folio/tex2speech/upload.PNG"
-							data-lightbox="gallery"></a>
-					</figure>
-				</div>
-				<!-- /Gallery Grid -->
-	
-			</div>
-		</section>
-
-		<!-- Page Navigation -->
-		<div class="page-nav" style = "padding-top: 11rem !important;">
-			<h6>See Next</h6>
-			<h1>
-				<a href="project3.html">Pre-Onboarding Skill - Alexa Hackathon</a>
-			</h1>
-		</div>
-		<!-- /Page Navigation -->
-
-	</main>
-	<!-- /Main Content -->
-
-<!-- Footer -->
-<footer class="page-footer">
-
-	<!-- Social Links -->
-	<div class="footer-social-links">
-		<a href="https://www.linkedin.com/in/taichen-rose-1191b1187/" class="color-linkedin">Linkedin</a>
-		<a href="https://github.com/willsower" class="color-github">GitHub</a>
-	</div>
-
-	<!-- Copyright -->
-	<small class="mt-4">&copy; Copyright; Taichen Rose</small>
-
-</footer>
-<!-- /Footer -->
-
-	<!-- JS -->
-	<script src="js/core.js"></script>
-	<script src="js/theme.js"></script>
-</body>
+    <!-- JS -->
+    <script src="js/core.js"></script>
+    <script src="js/theme.js"></script>
+  </body>
 </html>
