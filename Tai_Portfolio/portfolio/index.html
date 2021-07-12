@@ -1,71 +1,68 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Taichen - Portfolio</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="img/favicon.ico">
-	<link rel="stylesheet" href="css/core.css">
-	<link rel="stylesheet" href="css/theme.css">
-	<link rel="stylesheet" href="css/add.css">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Taichen - Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/add.css" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-	<!-- Preloader -->
-	<div id="preloader"></div>
+    <!-- Header -->
+    <header id="header" class="header-transparent">
+      <!-- Logo -->
+      <a href="index.html" class="logo"> TAICHEN ROSE </a>
 
-	<!-- Header -->
-	<header id="header" class="header-transparent">
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li><a href="#home" class="home-link is-active">Home</a></li>
+          <li><a href="#about" class="aside-link">About</a></li>
+          <li><a href="#timeline" class="aside-link">Work Experience</a></li>
+          <li><a href="#contact" class="aside-link">Contact</a></li>
+          <li>
+            <a href="projects.html">Project Work</a>
+            <ul>
+              <li><a href="project1.html">Deadwood Board Game</a></li>
+              <li><a href="project2.html">Tex2Speech</a></li>
+              <li>
+                <a href="project3.html"
+                  >Pre-Onboarding Skill - Alexa Hackathon</a
+                >
+              </li>
+              <li><a href="project4.html">Bookstore Project</a></li>
+              <li><a href="project5.html">Interactive Map Project</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- /Navigation -->
 
-		<!-- Logo -->
-		<a href="index.html" class="logo">
-			TAICHEN ROSE
-		</a>
+      <!-- Mobile Menu Button -->
+      <div class="mob-menu-btn"></div>
 
-		<!-- Navigation -->
-		<nav>
-			<ul>
-				<li><a href="#home" class="home-link is-active">Home</a></li>
-				<li><a href="#about" class="aside-link">About</a></li>
-				<li><a href="#timeline" class="aside-link">Work Experience</a></li>
-				<li><a href="#contact" class="aside-link">Contact</a></li>
-				<li>
-					<a href="projects.html">Project Work</a>
-					<ul>
-						<li><a href="project1.html">Deadwood Board Game</a></li>
-						<li><a href="project2.html">Tex2Speech</a></li>
-						<li><a href="project3.html">Pre-Onboarding Skill - Alexa Hackathon</a></li>
-						<li><a href="project4.html">Bookstore Project</a></li>
-						<li><a href="project5.html">Interactive Map Project</a></li>
-					</ul>
-				</li>
-			</ul>
-		</nav>
-		<!-- /Navigation -->
+      <!-- Close Aside Button -->
+      <div class="close-aside-btn"></div>
+    </header>
+    <!-- /Header -->
 
-		<!-- Mobile Menu Button -->
-		<div class="mob-menu-btn"></div>
+    <!-- Aside Content -->
+    <aside>
+      <div class="background-overlay"></div>
+      <div class="aside-inner">
+        <!-- About -->
+        <section id="about">
+          <h1 class="capitalize mb-5">About Me</h1>
+          <p class="separator-left mb-6"></p>
 
-		<!-- Close Aside Button -->
-		<div class="close-aside-btn"></div>
-
-	</header>
-	<!-- /Header -->
-
-	<!-- Aside Content -->
-	<aside>
-		<div class="background-overlay"></div>
-		<div class="aside-inner">
-	
-			<!-- About -->
-			<section id="about">
-
-				<h1 class="capitalize mb-5">About Me</h1>
-				<p class="separator-left mb-6"></p>
-				
-				<!-- Slider -->
-				<!-- <div class="swiper" data-autoplay="3000" data-effect="fade" data-loop="true" data-nav="true" data-pagination="true">
+          <!-- Slider -->
+          <!-- <div class="swiper" data-autoplay="3000" data-effect="fade" data-loop="true" data-nav="true" data-pagination="true">
 					<div class="swiper-slide" width = 100% height = auto>
 						<img src="img/gallery/me.jpg" alt="" width = 100% height = auto>
 					</div>
@@ -73,190 +70,229 @@
 						<img src="img/gallery/hike.jpg" alt="" width = 100% height = auto>
 					</div>
 				</div> -->
-				<!-- /Slider -->
+          <!-- /Slider -->
 
-				<div class="row pt-5">
-					<div class="col-md">
-						<img src = "./img/gallery/me.jpg" alt = "">
-					</div>
-					<div class="col-md">
-						<p class="mb-0">Hello! I'm Taichen, a full-stack developer based in Jersey City, NJ. You can find me working on open source software, developing web applications, or learning about new technologies. I work for the AWS Tech Giant in Cloud Infrastructure.</p>
-						<p></p>
+          <div class="row pt-5">
+            <div class="col-md">
+              <img src="./img/gallery/me.jpg" alt="" />
+            </div>
+            <div class="col-md">
+              <p class="mb-0" style = "font-size: 25px;">
+                Hello! I'm Taichen, a full-stack developer based in Jersey City,
+                NJ. You can find me working on open source software, developing
+                web applications, or learning about new technologies.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- /About -->
 
-					</div>
-				</div>
-			</section>
-			<!-- /About -->
-	
-			<!-- Timeline -->
-			<section id="timeline">
+        <!-- Timeline -->
+        <section id="timeline">
+          <h1>Work Experience</h1>
+          <p class="separator-left mb-6"></p>
 
-				<h1>Work Experience</h1>
-				<p class="separator-left mb-6"></p>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="item-date">January 2021 - June 2021</div>
+              <h5>Web Developer | Jeopardy Magazine</h5>
+              <p>
+                Desiging online jeopardy magazine's 57th edition. Work with
+                graphic designer and communicate with editors to ensure
+                practical design.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <div class="item-date">January 2021 - June 2021</div>
+              <h5>Teaching Assistant | Western Washington University (WWU)</h5>
+              <p>
+                Independently supervised weekly labs of 10-15 students,
+                providing educational help and materials. Worked under
+                professor's direction to maintain a clean and organized class.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <div class="item-date">September 2020 - December 2020</div>
+              <h5>
+                Software Developer Intern | Nooksack Salmon Enhancement
+                Association (NSEA)
+              </h5>
+              <p>
+                Worked on interactive map project to display restoration
+                projects around Whatcom County in Washington State. Actively met
+                with client to show progress and get feedback for next round of
+                sprints.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <div class="item-date">June 2020 - November 2020</div>
+              <h5>
+                Professional Services Consultant Intern - Cloud Infrastructure
+                Architect | Amazon Web Services (AWS)
+              </h5>
+              <p>
+                Developed two static web applications, with Vue.JS, and wrote
+                content for them regarding change management for external
+                customers and internal. Developed a dynamic web application
+                using AWS tools, Python, and Web Development Languages to
+                display user data.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <div class="item-date">August 2019 - September 2020</div>
+              <h5>Student Tutor | Varsity Tutors</h5>
+              <p>
+                Developed learning plans and personal classroom materials around
+                student needs and learning styles. Communicated student progress
+                to guardians, and gave them learning plans on successful school
+                strategies to motivate their children. <br /><br />
+                Areas tutored: Java, JavaScript, Lua (game programming), Python,
+                Algebra 2, Geometry, and Calculus.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <div class="item-date">June 2019 - August 2020</div>
+              <h5>Prouction & Operations Manager | Herbal Face Food</h5>
+              <p>
+                Support all warehouse and manufacturing operations, implemented
+                efficient processes and procedures to ensure system efficiency.
+                Maintain/fullfill customer orders and update e-commerce web
+                application through Shopify.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- /Timeline -->
 
-				<div class="timeline">
-					<div class="timeline-item">
-						<div class="item-date">January 2021 - June 2021</div>
-						<h5>Web Developer | Jeopardy Magazine</h5>
-						<p>Desiging online jeopardy magazine's 57th edition. Work with graphic designer and communicate with editors to ensure practical design.</p>
-					</div>
-					<div class="timeline-item">
-						<div class="item-date">January 2021 - Present</div>
-						<h5>Teaching Assistant | Western Washington University (WWU)</h5>
-						<p>Independently supervised weekly labs of 10-15 students, providing educational help and materials. Worked under professor's direction to maintain a clean and organized class.</p>
-					</div>
-					<div class="timeline-item">
-						<div class="item-date">September 2020 - December 2020</div>
-						<h5>Software Developer Intern | Nooksack Salmon Enhancement Association (NSEA)</h5>
-						<p>Worked on interactive map project to display restoration projects around Whatcom County in Washington State. Actively met with client to show progress and get feedback for next round of sprints.</p>
-					</div>
-					<div class="timeline-item">
-						<div class="item-date">June 2020 - November 2020</div>
-						<h5>Professional Services Consultant Intern - Cloud Infrastructure Architect | Amazon Web Services (AWS)</h5>
-						<p>Developed two static web applications, with Vue.JS, and wrote content for them regarding change management for external customers and internal. Developed a dynamic web application using AWS tools, Python, and Web Development Languages to display user data.</p>
-					</div>
-					<div class="timeline-item">
-						<div class="item-date">August 2019 - September 2020</div>
-						<h5>Student Tutor | Varsity Tutors</h5>
-						<p>Developed learning plans and personal classroom materials around student needs and learning styles.
-						 Communicated student progress to guardians, and gave them learning plans on successful school strategies to motivate their children.
-						<br><br>
-						Areas tutored: Java, JavaScript, Lua (game programming), Python, Algebra 2, Geometry, and Calculus.
-						</p>
-					</div>
-					<div class="timeline-item">
-						<div class="item-date">June 2019 - August 2020</div>
-						<h5>Prouction & Operations Manager | Herbal Face Food</h5>
-						<p>Support all warehouse and manufacturing operations, implemented efficient processes and procedures to ensure system efficiency. Maintain/fullfill customer orders and update e-commerce web application through Shopify. 
-						</p>
-					</div>
-				</div>
+        <!-- Contact -->
+        <section id="contact">
+          <h1>Get In Touch</h1>
+          <p class="separator-left mb-6"></p>
 
-			</section>
-			<!-- /Timeline -->
-	
-			<!-- Contact -->
-			<section id="contact">
+          <div class="contact-details-holder">
+            <!-- map toggle button -->
+            <div class="map-toggle-btn"></div>
 
-				<h1>Get In Touch</h1>
-				<p class="separator-left mb-6"></p>
-	
-				<div class="contact-details-holder">
-	
-					<!-- map toggle button -->
-					<div class="map-toggle-btn"></div>
-	
-					<!-- contact details -->
-					<div class="contact-detail-boxes text-light">
-	
-						<div class="contact-detail-box">
-							<i class="fa fa-phone"></i>
-							<div>
-								<p>+1 360 320 3219</p>
-							</div>
-						</div>
-	
-						<div class="contact-detail-box">
-							<i class="fa fa-map-marker"></i>
-							<div>
-								<p>BASED IN WASHINGTON, USA</p>
-							</div>
-						</div>
-	
-						<div class="contact-detail-box">
-							<i class="fa fa-envelope-o"></i>
-							<div>
-								<p>Mail Me @ taichen.rose0@gmail.com</p>
-							</div>
-						</div>
-	
-						<hr class="separator-left">
+            <!-- contact details -->
+            <div class="contact-detail-boxes text-light">
+              <div class="contact-detail-box">
+                <i class="fa fa-phone"></i>
+                <div>
+                  <p>+1 360 320 3219</p>
+                </div>
+              </div>
 
-						<!-- Social Links -->
-						<div class="social-links">
-							<!-- <a href="#"><i class="fa fa-facebook"></i></a> -->
-							<!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
-							<a href="https://www.linkedin.com/in/taichen-rose-1191b1187/"><i class="fa fa-linkedin"></i></a>
-							<a href="https://github.com/willsower"><i class="fa fa-github"></i></a>
-						</div>
+              <div class="contact-detail-box">
+                <i class="fa fa-map-marker"></i>
+                <div>
+                  <p>BASED IN WASHINGTON, USA</p>
+                </div>
+              </div>
 
-					</div>
-					<!-- /contact details -->
-	
-					<!-- google map -->
-					<!-- <div class="google-map" 
+              <div class="contact-detail-box">
+                <i class="fa fa-envelope-o"></i>
+                <div>
+                  <p>Mail Me @ taichen.rose0@gmail.com</p>
+                </div>
+              </div>
+
+              <hr class="separator-left" />
+
+              <!-- Social Links -->
+              <div class="social-links">
+                <!-- <a href="#"><i class="fa fa-facebook"></i></a> -->
+                <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                <a href="https://www.linkedin.com/in/taichen-rose-1191b1187/"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/willsower"
+                  ><i class="fa fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- /contact details -->
+
+            <!-- google map -->
+            <!-- <div class="google-map" 
 						 data-api-key="" 
 						 data-latitude="40.7323333" 
 						 data-longitude="-74.0054748" 
 						 data-zoom="13" 
 						 data-marker="img/map-marker.png">
 					</div> -->
-	
-				</div>
-	
-				<h1 class="mt-8">Say Hello!</h1>
-				<p class="separator-left mt-2 mb-6"></p>
+          </div>
 
-				<!-- contact form -->
-				<form class="mail-form" 
-					  action="php/mail.php" 
-					  data-mailto="taichen.rose0@gmail.com"
-					  data-subject="From Personal Web application"
-					  method = "post">
-					<div class="row">
-						<div class="col-md mb-3">
-							<input type="text" name = "name" placeholder="Name:">
-						</div>
-						<div class="col-md mb-3">
-							<input type="text" name = "email" placeholder="Email:">
-						</div>
-						<div class="col-12">
-							<textarea name="message" id="" rows="6" placeholder="Message..."></textarea>
-						</div>
-						<div class="col-12">
-							<button type="submit" class="button style-2 mb-0">Send</button>
-						</div>
-					</div>
-				</form>
-				<!-- /contact form -->
-	
-				<!-- copyright -->
-				<div class="">
-					<p class="separator-left mt-8"></p>
-					<small>&copy; Copyright; Taichen Rose</small>
-				</div>
-				
-			</section>
-			<!-- /Contact -->
-	
-		</div>
-	</aside>
-	<!-- /Aside Content -->
+          <h1 class="mt-8">Say Hello!</h1>
+          <p class="separator-left mt-2 mb-6"></p>
 
-	<!-- Main Content -->
-	<main>
+          <!-- contact form -->
+          <form
+            class="mail-form"
+            action="php/mail.php"
+            data-mailto="taichen.rose0@gmail.com"
+            data-subject="From Personal Web application"
+            method="post"
+          >
+            <div class="row">
+              <div class="col-md mb-3">
+                <input type="text" name="name" placeholder="Name:" />
+              </div>
+              <div class="col-md mb-3">
+                <input type="text" name="email" placeholder="Email:" />
+              </div>
+              <div class="col-12">
+                <textarea
+                  name="message"
+                  id=""
+                  rows="6"
+                  placeholder="Message..."
+                ></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="button style-2 mb-0">Send</button>
+              </div>
+            </div>
+          </form>
+          <!-- /contact form -->
 
-		<!-- Media Background -->
-		<div class="media-background" data-background="img/gallery/hero.jpg" data-overlay="black; .4">
+          <!-- copyright -->
+          <div class="">
+            <p class="separator-left mt-8"></p>
+            <small>&copy; Copyright; Taichen Rose</small>
+          </div>
+        </section>
+        <!-- /Contact -->
+      </div>
+    </aside>
+    <!-- /Aside Content -->
 
-			<!-- Caption Text -->
-			<div class="media-background-caption">
-				<h1 data-animation="fade-in-bottom 1.2s">Hello, I'm Tai!</h1>
-				<h3 class="lead font-os" data-animation="fade-in-bottom .7s .5s">
-					<span><!--And I'm a Developer <br> -->I'm a</span>
-					<span class="text-light" data-typed="Web Developer; Cloud Infrastructure Architect; Full Stack Developer"></span>
-				</h3>
-			</div>
-			<!-- /Caption Text -->
+    <!-- Main Content -->
+    <main>
+      <!-- Media Background -->
+      <div
+        class="media-background"
+        data-background="img/gallery/hero.jpg"
+        data-overlay="black; .4"
+      >
+        <!-- Caption Text -->
+        <div class="media-background-caption">
+          <h1 data-animation="fade-in-bottom 1.2s">Hello, I'm Tai!</h1>
+          <h3 class="lead font-os" data-animation="fade-in-bottom .7s .5s">
+            <span><!--And I'm a Developer <br> -->I'm a</span>
+            <span
+              class="text-light"
+              data-typed="Web Developer; Cloud Infrastructure Architect; Full Stack Developer"
+            ></span>
+          </h3>
+        </div>
+        <!-- /Caption Text -->
+      </div>
+      <!-- Media Background -->
+    </main>
+    <!-- /Main Content -->
 
-		</div>
-		<!-- Media Background -->
-		
-	</main>
-	<!-- /Main Content -->
-
-	<!-- JS -->
-	<script src="js/core.js"></script>
-	<script src="js/theme.js"></script>
-</body>
+    <!-- JS -->
+    <script src="js/core.js"></script>
+    <script src="js/theme.js"></script>
+  </body>
 </html>
